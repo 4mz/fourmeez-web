@@ -4,14 +4,6 @@ module.exports = function (grunt) {
     require('time-grunt')(grunt);
     require('load-grunt-tasks')(grunt);
 
-    var config = {
-        app: '',
-        dist: 'dist',
-        cssDir: 'css',
-        imagesDir: 'images',
-        jsDir: 'js'
-    };
-
     grunt.initConfig({
         clean: {
             dist: ['.tmp', 'dist/*']
@@ -39,11 +31,19 @@ module.exports = function (grunt) {
                             'css/**/*',
                             'images/*',
                             'index.html',
+                            'user.html',
+                            'worker.html',
                             'js/*'
                         ]
                     }
                 ]
             }
+        },
+        'gh-pages': {
+            options: {
+                base: 'dist'
+            },
+            src: ['**']
         }
     });
 
@@ -53,4 +53,9 @@ module.exports = function (grunt) {
     ]);
 
     grunt.registerTask('default', ['package']);
+
+    grunt.registerTask('deploy', [
+        'package',
+        'gh-pages'
+    ]);
 };
