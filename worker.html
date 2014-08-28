@@ -6,18 +6,15 @@
     <meta name="description" content="Fourmeez inscription particulier"/>
     <meta name="keywords" content="fourmeez,artisans,particuliers,artisans,plomberie"/>
     <!--[if lte IE 8]>
-    <script src="css/ie/html5shiv.js"></script><![endif]-->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery.dropotron.min.js"></script>
-    <script src="js/skel.min.js"></script>
-    <script src="js/skel-layers.min.js"></script>
-    <script src="js/init.js"></script>
-    <noscript>
-        <link rel="stylesheet" href="css/skel.css"/>
-        <link rel="stylesheet" href="css/style.css"/>
-    </noscript>
+    <script src="css/ie/html5shiv.js"></script>
+    <![endif]-->
+    <!--CSS0-->
+    <link rel="stylesheet" href="css/skel.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <!--CSS0-->
     <!--[if lte IE 8]>
-    <link rel="stylesheet" href="css/ie/v8.css"/><![endif]-->
+    <link rel="stylesheet" href="css/ie/v8.css"/>
+    <![endif]-->
 </head>
 <body class="no-sidebar">
 
@@ -60,20 +57,26 @@
                 <form method="post" action="#">
                     <div class="row half">
                         <div class="6u">
-                            <input name="name" placeholder="Nom" type="text"/>
+                            <input id="name" name="name" placeholder="Nom" type="text" required=""/>
                         </div>
                         <div class="6u">
-                            <input name="firstname" placeholder="Prénom" type="text"/>
+                            <input id="firstname" name="firstname" placeholder="Prénom" type="text" required=""/>
                         </div>
                     </div>
                     <div class="row half">
                         <div class="12u">
-                            <input name="email" placeholder="Email" type="text"/>
+                            <input id="email" name="email" placeholder="Email" type="text" required=""/>
                         </div>
                     </div>
                     <div class="row half">
                         <div class="12u">
-                            <textarea name="message" placeholder="Adresse"></textarea>
+                            <input id="phone" name="phone" placeholder="Téléphone" type="text"/>
+                        </div>
+                    </div>
+                    <div class="row half">
+                        <div class="12u">
+                            <input id="postcode" name="postcode" placeholder="Département d'intervention (ex : 77)"
+                                   type="text"/>
                         </div>
                     </div>
                     <div class="row half">
@@ -116,6 +119,15 @@
         </ul>
     </div>
 </div>
-
+<!--JS0-->
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.dropotron.min.js"></script>
+<script src="js/skel.min.js"></script>
+<script src="js/skel-layers.min.js"></script>
+<script src="js/init.js"></script>
+<!--JS0-->
+<!--JS1-->
+<script src="js/worker.js"></script>
+<!--JS1-->
 </body>
 </html>

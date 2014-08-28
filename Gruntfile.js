@@ -26,19 +26,18 @@ module.exports = function (grunt) {
                         cwd: './',
                         dest: 'dist/',
                         src: [
-                            '*.png',
+                            'favicon.png',
                             'fonts/*',
-                            'css/**/*',
-                            'images/*',
-                            'index.html',
-                            'user.html',
-                            'worker.html',
-                            'js/*'
+                            'css/ie/*'
                         ]
                     }
                 ]
             }
         },
+        // TODO CSS (minify skell and style, minify others)
+        // TODO JS (minify and concat)
+        // TODO COPY + REPLACE (index, worker and user)
+        // TODO MINIFY HTML
         'gh-pages': {
             options: {
                 base: 'dist'
