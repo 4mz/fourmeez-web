@@ -6,7 +6,7 @@ module.exports = function (grunt) {
 
     grunt.initConfig({
         clean: {
-            dist: ['.tmp', 'dist/*']
+            dist: ['.tmp', 'dist/*', 'build/*']
         },
         copy: {
             index: {
