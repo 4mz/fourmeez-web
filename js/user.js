@@ -9,17 +9,19 @@ $(document).ready(function () {
         var firstnameEl = $('#firstname');
         var emailEl = $('#email');
         var phoneEl = $('#phone');
+        var submitOk = $('#submit-ok');
+        var submitKo = $('#submit-ko');
 
         function isFormValid() {
             var name = nameEl.val();
             if (name.length > 0) {
-                user.name = name;
+                user.last_name = name;
             } else {
                 return false;
             }
             var firstname = firstnameEl.val();
             if (firstname.length > 0) {
-                user.firstname = firstname;
+                user.first_name = firstname;
             } else {
                 return false;
             }
@@ -35,11 +37,16 @@ $(document).ready(function () {
             return true;
         }
 
-        saveEl.click(function () {
+        saveEl.click(function (ev) {
+            ev.preventDefault();
             if (isFormValid()) {
-//                TODO
-//                $.post('', user, function (data) {
-//                });
+                $.post('http://178.62.139.175:8000/users', user, function () {
+                    submitOk.fadeIn();
+                    submitKo.hide();
+                }).fail(function () {
+                    submitKo.fadeIn();
+                    submitOk.hide();
+                });
             }
         });
     }

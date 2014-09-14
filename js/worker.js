@@ -10,17 +10,19 @@ $(document).ready(function () {
         var emailEl = $('#email');
         var phoneEl = $('#phone');
         var postcodeEl = $('#postcode');
+        var submitOk = $('#submit-ok');
+        var submitKo = $('#submit-ko');
 
         function isFormValid() {
             var name = nameEl.val();
             if (name.length > 0) {
-                worker.name = name;
+                worker.last_name = name;
             } else {
                 return false;
             }
             var firstname = firstnameEl.val();
             if (firstname.length > 0) {
-                worker.firstname = firstname;
+                worker.first_name = firstname;
             } else {
                 return false;
             }
@@ -33,16 +35,22 @@ $(document).ready(function () {
             var phone = phoneEl.val();
             worker.phone = phone || '';
             var postcode = postcodeEl.val();
-            worker.postcode = postcode || '';
+            worker.post_code = postcode || '';
 
             return true;
         }
 
         saveEl.click(function () {
             if (isFormValid()) {
-//                TODO
-//                $.post('', worker, function (data) {
-//                });
+                if (isFormValid()) {
+                    $.post('http://178.62.139.175:8000/workers', worker, function () {
+                        submitOk.fadeIn();
+                        submitKo.hide();
+                    }).fail(function () {
+                        submitKo.fadeIn();
+                        submitOk.hide();
+                    });
+                }
             }
         });
     }
