@@ -3,9 +3,14 @@
 Fourmeez landing page
 
 ## HowTo
+* Clone repository
+
+### Run
+````$ npm install````
+
+````$ grunt````
 
 ### Package
-* Clone repository
 
 ````$ npm install````
 
