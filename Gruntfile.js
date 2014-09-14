@@ -1,10 +1,46 @@
 'use strict';
 
+var lrSnippet = require('connect-livereload')();
+
+var mountFolder = function (connect, dir) {
+    return connect.static(require('path').resolve(dir));
+};
+
 module.exports = function (grunt) {
     require('time-grunt')(grunt);
     require('load-grunt-tasks')(grunt);
 
     grunt.initConfig({
+        watch: {
+            options: {
+                nospawn: true,
+                livereload: true
+            },
+            livereload: {
+                files: [
+                    'js/*.js',
+                    'css/*.css',
+                    'images/*',
+                    '*.html'
+                ]
+            }
+
+        },
+        connect: {
+            options: {
+                hostname: '0.0.0.0'
+            },
+            livereload: {
+                options: {
+                    middleware: function (connect) {
+                        return [
+                            lrSnippet,
+                            mountFolder(connect, './')
+                        ];
+                    }
+                }
+            }
+        },
         clean: {
             dist: ['.tmp', 'dist/*', 'build/*']
         },
@@ -107,7 +143,10 @@ module.exports = function (grunt) {
         'copy:dist'
     ]);
 
-    grunt.registerTask('default', ['package']);
+    grunt.registerTask('default', [
+        'connect:livereload',
+        'watch'
+    ]);
 
     grunt.registerTask('deploy', [
         'package',
