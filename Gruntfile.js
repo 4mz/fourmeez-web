@@ -87,7 +87,8 @@ module.exports = function (grunt) {
                         src: [
                             'favicon.png',
                             'fonts/*',
-                            'css/**'
+                            'css/**',
+                            'CNAME'
                         ]
                     }
                 ]
