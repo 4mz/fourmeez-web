@@ -10,6 +10,7 @@ $(document).ready(function () {
         var emailEl = $('#email');
         var phoneEl = $('#phone');
         var postcodeEl = $('#postcode');
+        var companyEl = $('#company');
         var submitOk = $('#submit-ok');
         var submitKo = $('#submit-ko');
 
@@ -32,6 +33,12 @@ $(document).ready(function () {
             } else {
                 return false;
             }
+            var company = companyEl.val();
+            if (company.length > 0) {
+                worker.company_name = company;
+            } else {
+                return false;
+            }
             var phone = phoneEl.val();
             worker.phone = phone || '';
             var postcode = postcodeEl.val();
@@ -40,14 +47,21 @@ $(document).ready(function () {
             return true;
         }
 
-        saveEl.click(function () {
+        saveEl.click(function (ev) {
+            ev.preventDefault();
             if (isFormValid()) {
                 if (isFormValid()) {
                     $.post('http://178.62.139.175:8000/workers', worker, function () {
                         submitOk.fadeIn();
                         submitKo.hide();
+                        setTimeout(function () {
+                            submitOk.fadeOut();
+                        }, 3000);
                     }).fail(function () {
                         submitKo.fadeIn();
+                        setTimeout(function () {
+                            submitKo.fadeOut();
+                        }, 3000);
                         submitOk.hide();
                     });
                 }

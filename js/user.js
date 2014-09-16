@@ -43,9 +43,15 @@ $(document).ready(function () {
                 $.post('http://178.62.139.175:8000/users', user, function () {
                     submitOk.fadeIn();
                     submitKo.hide();
+                    setTimeout(function () {
+                        submitOk.fadeOut();
+                    }, 3000);
                 }).fail(function () {
                     submitKo.fadeIn();
                     submitOk.hide();
+                    setTimeout(function () {
+                        submitKo.fadeOut();
+                    }, 3000);
                 });
             }
         });
