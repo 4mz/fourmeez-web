@@ -69,7 +69,7 @@ a {
 }
 
 a:hover {
-    color: #f35858;
+    color: #189467;
     border-bottom-color: rgba(255, 255, 255, 0);
 }
 
@@ -145,7 +145,7 @@ header {
 
 header > p {
     display: block;
-    color: #f35858;
+    color: #189467;
     padding: 0.75em 0 1em 0;
     font-size: 1.5em;
     line-height: 1.5em;
@@ -428,8 +428,8 @@ input[type="button"]:hover,
 input[type="submit"]:hover,
 input[type="reset"]:hover,
 .button:hover {
-    color: #f35858;
-    border-color: rgba(243, 88, 88, 0.5);
+    color: #189467;
+    border-color: #086041;
 }
 
 /*********************************************************************************/
@@ -492,30 +492,18 @@ input[type="reset"]:hover,
 #header-wrapper {
     position: relative;
     padding: 4em 0 2em 0;
-
-    background-color: #f08c89;
-    background-image: url('images/header.svg');
-    background-size: 100% 620%;
-
-    background-image: url('images/overlay.png'), url('images/header.svg'), -moz-linear-gradient(75deg, #FF7088 15%, #F2B69D 55%);
-    background-image: url('images/overlay.png'), url('images/header.svg'), -webkit-linear-gradient(75deg, #FF7088 15%, #F2B69D 55%);
-    background-image: url('images/overlay.png'), url('images/header.svg'), -o-linear-gradient(75deg, #FF7088 15%, #F2B69D 55%);
-    background-image: url('images/overlay.png'), url('images/header.svg'), -ms-linear-gradient(75deg, #FF7088 15%, #F2B69D 55%);
-    background-image: url('images/overlay.png'), url('images/header.svg'), linear-gradient(75deg, #FF7088 15%, #F2B69D 55%);
-    background-size: 128px 128px, 100% 620%, auto;
-    background-repeat: repeat, no-repeat, no-repeat;
+    background: #189467 url('../images/img1.jpg');
 }
 
 .homepage #header-wrapper {
     padding: 10em 0 6em 0;
-    background-size: 128px 128px, 100% 100%, auto;
+    background-size: 100%;
 }
 
 #promo-wrapper {
     position: relative;
-    background-image: url('images/overlay.png'), url('../images/promo.jpg');
     background-size: 192px 192px, cover;
-    background-position: top left, center center;
+    background: url('images/overlay.png'), url('../images/promo.jpg') top left, center center;
     color: #fff;
     text-align: center;
     padding: 6em 0 6em 0;
@@ -644,7 +632,7 @@ input[type="reset"]:hover,
 
 .dropotron li.active > a,
 .dropotron li.active > span {
-    color: #f35858;
+    color: #189467;
 }
 
 .dropotron.level-0 {
@@ -824,13 +812,13 @@ input[type="reset"]:hover,
 }
 
 .submit {
-    background-color: #27ae60;
+    background-color: #189467;
     min-height: 3.5em;
     line-height: 3.5em;
     width: 100%;
     padding: 0 10px;
     display: none;
-    border: 1px solid #2E6D48;
+    border: 1px solid #086041;
     border-radius: .35em;
     color: white;
 }
