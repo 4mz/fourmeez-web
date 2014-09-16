@@ -20,8 +20,6 @@
 <div id="header-wrapper">
     <div id="header" class="container">
 
-        <img src="images/img1.jpg" class="header-img">
-
         <!-- Logo -->
         <h1 id="logo"><a href="index.html">Fourmeez</a></h1>
 
@@ -55,10 +53,15 @@
                 <form method="post" action="#">
                     <div class="row half">
                         <div class="6u">
-                            <input id="name" name="name" placeholder="Nom" type="text" required=""/>
+                            <input id="firstname" name="firstname" placeholder="Prénom" type="text" required=""/>
                         </div>
                         <div class="6u">
-                            <input id="firstname" name="firstname" placeholder="Prénom" type="text" required=""/>
+                            <input id="name" name="name" placeholder="Nom" type="text" required=""/>
+                        </div>
+                    </div>
+                    <div class="row half">
+                        <div class="12u">
+                            <input id="company" name="company" placeholder="Entreprise" type="text" required=""/>
                         </div>
                     </div>
                     <div class="row half">
@@ -80,8 +83,8 @@
                     <div class="row half">
                         <div class="12u">
                             <ul class="actions">
-                                <li><input type="submit" value="Sauvegarder"/></li>
-                                <li><input type="reset" value="Recommencer"/></li>
+                                <li><input type="submit" id="save" value="Sauvegarder"/></li>
+                                <li><input type="reset" id="reset" value="Recommencer"/></li>
                             </ul>
                             <div class="submit" id="submit-ok">Inscription enregistrée.</div>
                             <div class="submit submit-ko" id="submit-ko">Erreur lors de l'inscription, veuillez essayer
