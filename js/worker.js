@@ -57,6 +57,7 @@ $(document).ready(function () {
                         setTimeout(function () {
                             submitOk.fadeOut();
                         }, 3000);
+                        ga('send', 'event', 'subscription', 'worker');
                     }).fail(function () {
                         submitKo.fadeIn();
                         setTimeout(function () {

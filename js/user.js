@@ -46,6 +46,7 @@ $(document).ready(function () {
                     setTimeout(function () {
                         submitOk.fadeOut();
                     }, 3000);
+                    ga('send', 'event', 'subscription', 'user');
                 }).fail(function () {
                     submitKo.fadeIn();
                     submitOk.hide();
