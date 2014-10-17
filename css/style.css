@@ -492,7 +492,6 @@ input[type="reset"]:hover,
 #header-wrapper {
     position: relative;
     padding: 4em 0 2em 0;
-    background: #189467 url('../images/img1.jpg');
 }
 
 .homepage #header-wrapper {
@@ -826,4 +825,13 @@ input[type="reset"]:hover,
 .submit.submit-ko {
     background-color: #cd4031;
     border-color: #C72F2F;
+}
+
+.header-bg {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background: url('../images/img1.jpg') center;
 }
