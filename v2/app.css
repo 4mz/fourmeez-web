@@ -1,0 +1,189 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1.2em;
+    font-family: 'Cabin', sans-serif;
+}
+
+.header {
+    background: url('img/home.jpg') no-repeat center center;
+    height: 550px;
+    text-align: center;
+    width: 100%;
+    color: white;
+}
+
+.header .message {
+    padding-top: 125px;
+    font-size: 4em;
+}
+
+.header .sub-message {
+    padding-top: 50px;
+    font-size: 2.5em;
+    max-width: 650px;
+    margin: auto;
+    line-height: 50px;
+}
+
+.download {
+    background: url("img/download.jpg");
+    height: 250px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.download .message {
+    font-size: 1.6em;
+    padding-top: 50px;
+}
+
+.download .sub-message {
+    padding-top: 15px;
+    color: #22f0c6;
+}
+
+.download .download-android-app {
+    padding-top: 20px;
+}
+
+.carousel-button {
+    background: url("img/carousel.jpg");
+    height: 100px;
+    width: 520px;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.button {
+    height: 50px;
+    width: 250px;
+    padding-top: 25px;
+    text-align: center;
+    background-color: #1ABC9C;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.carousel-button .button {
+    float: left;
+}
+
+.carousel-button .button:nth-of-type(1) {
+    margin-right: 20px;
+}
+
+.carousel {
+    background: url("img/carousel.jpg");
+    height: 600px;
+}
+
+.subscribe {
+    text-align: center;
+    color: white;
+    height: 400px;
+    background: url("img/download.jpg");
+}
+
+.subscribe .message {
+    padding-top: 50px;
+    font-size: 1.6em;
+}
+
+.subscribe .sub-message {
+    padding-top: 15px;
+    color: #22f0c6;
+}
+
+.subscribe .type {
+    padding-top: 20px;
+    width: 380px;
+    margin: auto;
+}
+
+.subscribe .type .type-item:nth-of-type(1) {
+    padding-right: 20px;
+    padding-left: 0;
+}
+
+.subscribe .type .type-item {
+    float: left;
+    position: relative;
+    padding-left: 40px;
+    padding-top: 10px;
+}
+
+.type img {
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    display: none;
+}
+
+.type .select-box {
+    position: absolute;
+    left: 10px;
+    top: 11px;
+    height: 17px;
+    width: 18px;
+    border: solid 2px white;
+}
+
+.type-item {
+    cursor: pointer;
+}
+
+.fourmeez-ee {
+    color: #1ABC9C;
+}
+
+.app-name {
+    text-transform: uppercase;
+}
+
+.highlight-light {
+    color: white;
+}
+
+.email-input {
+    margin-top: 30px;
+    width: 380px;
+    height: 40px;
+    border-radius: 3px;
+    border: none;
+    color: #2B2B2B;
+    padding: 0 5px;
+    text-align: center;
+}
+
+.type .button {
+    height: 40px;
+    margin: 40px auto;
+    padding-top: 20px;
+}
+
+.footer {
+    height: 250px;
+    background: url("img/carousel.jpg");
+    text-align: center;
+    padding-top: 50px;
+    color: white;
+}
+
+.contact-link {
+    height: 50px;
+    border: solid 1px #AFAFAF;
+    border-radius: 3px;
+    width: 250px;
+    padding-top: 20px;
+    margin: auto;
+    cursor: pointer;
+}
+
+.connect-links {
+    padding-top: 30px;
+}
+
+.connect-link {
+    padding-top: 10px;
+}

@@ -29,4 +29,5 @@ node_modules
 dist/
 build/
 
+.idea/bower_components/
 .idea/

@@ -1,0 +1,20 @@
+{
+  "name": "fourmeez-web",
+  "version": "0.0.0",
+  "homepage": "https://github.com/fourmeez/fourmeez-web",
+  "authors": [
+    "blacroix <benjlacroix@gmail.com>"
+  ],
+  "description": "Landing page for Fourmeez and Promeez",
+  "main": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "~2.1.3"
+  }
+}
