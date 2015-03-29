@@ -3,6 +3,7 @@ body {
     padding: 0;
     font-size: 1.2em;
     font-family: 'Cabin', sans-serif;
+    min-width: 300px;
 }
 
 .header {
@@ -49,9 +50,12 @@ body {
 .carousel-button {
     background: url("img/carousel.jpg");
     height: 100px;
-    width: 70%;
+    width: 600px;
     max-width: 520px;
     margin: auto;
+}
+
+.padding-top {
     padding-top: 100px;
 }
 
@@ -212,6 +216,7 @@ body {
     height: 380px;
     padding-bottom: 100px;
     padding-top: 50px;
+    margin: auto;
 }
 
 .carousel-item .message {
@@ -235,8 +240,7 @@ body {
 }
 
 .carousel-items {
-    width: 50%;
-    max-width: 600px;
+    width: 600px;
     margin: auto;
 }
 
@@ -248,13 +252,41 @@ body {
     display: none;
 }
 
-@media (max-width: 360px) {
-    .type0 #type1-content {
-        display: block;
+@media (min-width: 600px) {
+    #type3-button {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .carousel-button {
+        width: auto;
     }
 
-    .carousel-button {
+    .carousel-item {
+        float: inherit;
+        border-radius: 3px;
+        background: url("img/download.jpg");
+        padding: 10px 0;
+        margin: 20px auto;
+        height: auto;
+    }
+    #type0-button {
+        float: inherit;
+        margin: auto;
+    }
+    #type1-button {
         display: none;
+    }
+    #type3-button {
+        display: block;
+        margin: 50px auto;
+    }
+    .carousel-items {
+        width: auto;
+    }
+    .type0 #type1-content {
+        display: block;
     }
 
     .carousel {
@@ -281,10 +313,6 @@ body {
         padding-bottom: 50px;
     }
 
-    .carousel-item {
-        padding: 0;
-    }
-
     .subscribe {
         padding-bottom: 1px;
     }
@@ -296,6 +324,10 @@ body {
     .footer {
         padding-top: 50px;
         padding-bottom: 50px;
+    }
+
+    .padding-top {
+        padding-top: 30px;
     }
 }
 
