@@ -35,7 +35,7 @@ body {
 
 .download .message {
     font-size: 1.5em;
-    padding: 100px 10px 20px 10px;
+    padding: 65px 10px 20px 10px;
 }
 
 .download .sub-message {
@@ -44,7 +44,7 @@ body {
 }
 
 .download .download-android-app {
-    padding: 10px 0 100px 0;
+    padding: 10px 0 65px 0;
 }
 
 .carousel-button {
