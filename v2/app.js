@@ -42,7 +42,7 @@ window.app = {
                 that.ui.submitted.show();
                 $.post(
                     'http://178.62.139.175:8000/guests',
-                    {email: that.ui.email.val(), type: that.model.type},
+                    JSON.stringify({email: that.ui.email.val(), type: that.model.type}),
                     function () {
                     },
                     'json');
