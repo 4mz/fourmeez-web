@@ -106,6 +106,7 @@ body {
 .subscribe .type {
     max-width: 360px;
     margin: auto;
+    padding: 10px 0 30px 0px;
 }
 
 .subscribe .type .type-item:nth-of-type(1) {
@@ -177,9 +178,7 @@ body {
 }
 
 .subscribe .button {
-    height: 40px;
-    margin: 10px auto 50px auto;
-    padding-top: 20px;
+    margin: 0 auto 40px auto;
 }
 
 .footer {
