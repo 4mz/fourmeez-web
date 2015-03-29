@@ -45,7 +45,13 @@ window.app = {
                     type: 'POST',
                     data: JSON.stringify({email: that.ui.email.val(), type: that.model.type}),
                     contentType: "application/json; charset=utf-8",
-                    dataType: "json"
+                    dataType: "json",
+                    success: function () {
+                        ga('send', 'event', 'subscribe', 'success');
+                    },
+                    error: function () {
+                        ga('send', 'event', 'subscribe', 'error');
+                    }
                 })
             }
         });
