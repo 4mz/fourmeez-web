@@ -40,12 +40,13 @@ window.app = {
             if (that.isFormValid()) {
                 that.ui.submit.hide();
                 that.ui.submitted.show();
-                $.post(
-                    'http://178.62.139.175:8000/guests',
-                    JSON.stringify({email: that.ui.email.val(), type: that.model.type}),
-                    function () {
-                    },
-                    'json');
+                $.ajax({
+                    url: 'http://178.62.139.175:8000/guests',
+                    type: 'POST',
+                    data: {email: that.ui.email.val(), type: that.model.type},
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json"
+                })
             }
         });
         this.ui.contact.click(function () {
