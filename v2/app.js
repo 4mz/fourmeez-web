@@ -40,13 +40,18 @@ window.app = {
             if (that.isFormValid()) {
                 that.ui.submit.hide();
                 that.ui.submitted.show();
-                $.post('http://178.62.139.175:8000/guests', {email: that.ui.email.val(), type: that.model.type});
+                $.post(
+                    'http://178.62.139.175:8000/guests',
+                    {email: that.ui.email.val(), type: that.model.type},
+                    function () {
+                    },
+                    'json');
             }
         });
         this.ui.contact.click(function () {
             window.location.href = 'mailto:fourmeezapp@gmail.com?subject=' + encodeURI('Contact Fourmeez Web');
         });
-        this.ui.email.on('keydown', function() {
+        this.ui.email.on('keydown', function () {
             that.ui.email.removeClass('error');
         });
     },
