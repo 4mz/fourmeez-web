@@ -43,7 +43,7 @@ window.app = {
                 $.ajax({
                     url: 'http://178.62.139.175:8000/guests',
                     type: 'POST',
-                    data: {email: that.ui.email.val(), type: that.model.type},
+                    data: JSON.stringify({email: that.ui.email.val(), type: that.model.type}),
                     contentType: "application/json; charset=utf-8",
                     dataType: "json"
                 })
