@@ -12,7 +12,8 @@ window.app = {
         submit: $('#submit'),
         email: $('#email'),
         submitted: $('#submitted'),
-        contact: $('#contact')
+        contact: $('#contact'),
+        download: $('.download-android-app')
     },
     bind: function () {
         var that = this;
@@ -60,6 +61,9 @@ window.app = {
         });
         this.ui.email.on('keydown', function () {
             that.ui.email.removeClass('error');
+        });
+        this.ui.download.click(function() {
+            ga('send', 'event', 'click', 'download');
         });
     },
     isFormValid: function () {
