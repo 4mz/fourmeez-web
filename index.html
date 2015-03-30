@@ -1,179 +1,122 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="fr">
 <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Fourmeez : Comparez les meilleurs artisan pour vos travaux.">
+    <meta name="keywords" content="Fourmeez,Promeez,artisan,chantier,travaux">
     <title>Fourmeez</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <meta name="description"
-          content="Fourmeez Trouver rapidement un artisan qualifié, disponible et dans votre budget."/>
-    <meta name="keywords" content="artisan,clé,plombier,serrurier,contacter,trouver,aide"/>
-    <link rel="icon" type="image/png" href="./favicon.png">
-    <!--[if lte IE 8]>
-    <script src="css/ie/html5shiv.js"></script>
-    <![endif]-->
-    <link rel="stylesheet" href="css/skel.css"/>
-    <link rel="stylesheet" href="css/style.css"/>
-    <!--[if lte IE 8]>
-    <link rel="stylesheet" href="css/ie/v8.css"/>
-    <![endif]-->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+    <link rel="stylesheet" type="text/css" href="app.css">
+    <link rel="image_src" href="http://www.fourmeez.com/img/app.png">
 </head>
-<body class="homepage">
-
-<!-- Header -->
-<div id="header-wrapper">
-
-    <div class="header-bg"></div>
-
-    <div id="header" class="container">
-
-        <!-- Logo -->
-        <h1 id="logo"><a href="index.html">Fourmeez</a></h1>
-
-        <!-- Nav -->
-        <nav id="nav">
-            <ul>
-                <li></li>
-                <li><a href="user.html">Particulier</a></li>
-                <li class="break"><a href="worker.html">Artisan</a></li>
-                <li></li>
-            </ul>
-        </nav>
-
-        <!-- Hero -->
-        <section id="hero" class="container">
-            <header>
-                <h2>Réalisez tous vos projets</h2>
-            </header>
-            <p>Création, rénovation, décoration, réparation<br/>
-                <i>Trouvez rapidement un artisan qualifié, disponible et dans votre budget</i></p>
-            <ul class="actions">
-                <li><a href="user.html" class="button">Indiquer mon besoin</a></li>
-            </ul>
-            <br/>
-        </section>
-
+<body>
+<div class="header">
+    <div class="message"><span class="app-name">Fourm<span class="fourmeez-ee">ee</span>z</span> réinvente le bouche à
+        oreille&nbsp;!
+    </div>
+    <div class="sub-message">Vous avez des travaux à faire&nbsp;? Trouvez votre artisan recommandé par la communauté.</div>
+</div>
+<div class="download">
+    <div class="message">1ère communauté de recommandation d'artisans.</div>
+    <div class="sub-message">Entre nous, ce qui compte, c’est la confiance&nbsp;!</div>
+    <div class="download-android-app">
+        <a href="https://play.google.com/store/apps/details?id=fr.fourmz.fourmeez" target="_blank">
+            <img alt="Get it on Google Play"
+                 src="https://developer.android.com/images/brand/fr_generic_rgb_wo_60.png"/>
+        </a>
     </div>
 </div>
-
-<!-- Features 1 -->
-<div class="wrapper">
-    <div class="container">
-        <div class="row">
-            <section class="6u feature">
-                <div class="image-wrapper first">
-                    <a href="#" class="image featured first"><img src="images/img2.jpg" alt=""/></a>
+<div id="carousel" class="carousel type0">
+    <div class="carousel-button padding-top">
+        <div id="type0-button" class="button">Je <span class="highlight-light">cherche</span> un artisan</div>
+        <div id="type1-button" class="button">Je <span class="highlight-light">recommande</span> un artisan</div>
+    </div>
+    <div class="carousel-items">
+        <div id="type0-content">
+            <div class="carousel-item">
+                <div class="message">Postez votre annonce</div>
+                <div class="image"><img src="img/post.svg" alt=""></div>
+                <div class="sub-message">Indiquez en quelques secondes en quoi consiste vos travaux.</div>
+            </div>
+            <div class="carousel-item">
+                <div class="message">Comparez les offres</div>
+                <div class="image"><img src="img/compare.svg" alt=""></div>
+                <div class="sub-message">Choisissez un Pro parmi ceux recommandés par la communauté.</div>
+            </div>
+            <div class="carousel-item">
+                <div class="message">Le travail est fait&nbsp;!</div>
+                <div class="image"><img src="img/done.svg" alt=""></div>
+                <div class="sub-message">Le travail est terminé, vous pouvez évaluer votre artisan.</div>
+            </div>
+        </div>
+        <div id="type3-button" class="button">Je <span class="highlight-light">recommande</span> un artisan</div>
+        <div id="type1-content">
+            <div class="carousel-item">
+                <div class="message">Soyez informé</div>
+                <div class="image"><img src="img/known.svg" alt=""></div>
+                <div class="sub-message">Soyez prévenu dès qu’une nouvelle annonce est publiée.</div>
+            </div>
+            <div class="carousel-item">
+                <div class="message">Recommandez vos artisans</div>
+                <div class="image"><img src="img/recommend.svg" alt=""></div>
+                <div class="sub-message">Proposez les artisans en qui vous avez confiance aux autres membres de la
+                    communauté.
                 </div>
-                <header>
-                    <h2>Fourmeez trouve les meilleurs<br/>
-                        artisans proches de chez vous</h2>
-                </header>
-                <p>Après avoir donné quelques détails sur le travail à faire, nous vous mettons en contact avec
-                    plusieurs artisans qualifiés pour réaliser votre chantier.</p>
-                <ul class="actions">
-                    <li><a href="user.html" class="button">Indiquer mon besoin</a></li>
-                </ul>
-            </section>
-            <section class="6u feature">
-                <div class="image-wrapper">
-                    <a href="#" class="image featured"><img src="images/img3.jpg" alt=""/></a>
+            </div>
+            <div class="carousel-item">
+                <div class="message">Soyez récompensé&nbsp;!</div>
+                <div class="image"><img src="img/money.svg" alt=""></div>
+                <div class="sub-message">Cagnottez des euros à chaque fois que l’artisan que vous recommandez fait du
+                    bon travail&nbsp;!
                 </div>
-                <header>
-                    <h2>Comparez les artisans et<br/>
-                        choisissez celui qui vous convient</h2>
-                </header>
-                <p>Vous disposez de toutes les informations pour choisir votre artisan dans la liste qui vous est
-                    proposée.<br/><i>
-                        Profil de l’artisan, devis personnalisé, avis et notations des clients.</i></p>
-            </section>
+            </div>
         </div>
     </div>
+    <div style="clear: both"></div>
 </div>
+<div class="subscribe">
+    <div class="message">Participez à la BETA et restez informé des dernières nouveautés.</div>
+    <div class="sub-message">Enregistrez vous et rejoignez la communauté Fourmeez.</div>
+    <div id="type" class="type">
+        <div class="type-item">Vous êtes :</div>
+        <div id="type-user" class="type-item">
+            <img src="img/select.svg" alt="" width="30" height="30">
 
-<!-- Promo -->
-<div id="promo-wrapper">
-    <section id="promo">
-        <h2>Vous êtes artisan</h2>
-
-        <p>Inscrivez vous et recevez les demandes de devis de clients proches de chez vous.</p>
-        <a href="worker.html" class="button">Créer un compte pro.</a>
-    </section>
-</div>
-
-<!-- Features 2 -->
-<div class="wrapper">
-    <section class="container">
-        <header class="major">
-            <h2>Vous avez un projet, n'attendez plus :</h2>
-
-            <p>Essayez Fourmeez !</p>
-        </header>
-        <div class="row features">
-            <section class="4u feature">
-                <div class="image-wrapper first">
-                    <a href="#" class="image featured"><img src="images/img4.jpg" alt=""/></a>
-                </div>
-                <h3>Comment ça marche ?</h3>
-                <ul>
-                    <li>1. Postez votre mission</li>
-                    <li>2. Consultez les propositions</li>
-                    <li>3. Sélectionnez votre artisan</li>
-                </ul>
-            </section>
-            <section class="4u feature">
-                <div class="image-wrapper">
-                    <a href="#" class="image featured"><img src="images/img5.jpg" alt=""/></a>
-                </div>
-                <h3>Garanties Fourmeez</h3>
-                <ul>
-                    <li>Faites des <b>économies</b></li>
-                    <li>Gagnez du <b>temps</b></li>
-                    <li>Contactez des artisans <b>fiables</b></li>
-                </ul>
-            </section>
-            <section class="4u feature">
-                <div class="image-wrapper">
-                    <a href="#" class="image featured"><img src="images/img6.jpg" alt=""/></a>
-                </div>
-                <h3>Simple et facile</h3>
-
-                <p>Sur votre téléphone</p>
-                <img src="images/logo_android.png">
-            </section>
+            <div class="select-box"></div>
+            Un particulier
         </div>
-        <ul class="actions major">
-            <li><a href="user.html" class="button">Créer un compte</a></li>
-        </ul>
-    </section>
+        <div id="type-worker" class="type-item">
+            <img src="img/select.svg" alt="" width="30" height="30">
+
+            <div class="select-box"></div>
+            Un artisan
+        </div>
+        <div style="clear: both"></div>
+    </div>
+    <input id="email" class="email-input" type="text" placeholder="Inscrivez votre adresse email">
+
+    <div id="submit" class="button">Envoyer</div>
+    <div id="submitted" class="submitted">Participation enregistrée&nbsp;! A bientôt ;).</div>
 </div>
-
-<!-- Footer -->
-<div id="footer-wrapper">
-    <div id="footer" class="container">
-        <header class="major">
-            <h2>Fourmeez</h2>
-
-            <p>Vous avez un chantier ? Nous avons l'artisan qu'il vous faut. <br/>Contactez nous !
-            </p>
-        </header>
-        <div class="row">
-            <section class="6u">
-                <div class="row no-collapse-1 flush">
-                    <ul class="divided icons 6u">
-                        <li class="icon fa-twitter"><a href="https://twitter.com/Fourmeez"><span class="extra">twitter.com/</span>Fourmeez</a>
-                        </li>
-                    </ul>
-                </div>
-            </section>
+<div class="footer">
+    <div id="contact" class="contact-link">
+        Contactez-nous
+    </div>
+    <div class="connect-links">
+        Suivez-nous
+        <div class="connect-link">
+            <a href="https://twitter.com/Fourmeez" target="_blank">
+                <img src="img/twitter.svg" alt="" height="40" width="40">
+            </a>
         </div>
     </div>
-    <div id="copyright" class="container">
-        <ul class="menu">
-            <li>&copy; Fourmeez. All rights reserved.</li>
-            <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-        </ul>
-    </div>
+    <div class="copyright">&#169; 2015 4MZ Factory</div>
 </div>
-<script src="app.min.js?v=1413576223472"></script>
-<script>
+<script type="text/javascript">
     (function (i, s, o, g, r, a, m) {
         i['GoogleAnalyticsObject'] = r;
         i[r] = i[r] || function () {
@@ -185,9 +128,10 @@
         a.src = g;
         m.parentNode.insertBefore(a, m)
     })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
     ga('create', 'UA-54813604-1', 'auto');
     ga('send', 'pageview');
 </script>
+<script type="text/javascript" src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
 </body>
 </html>
