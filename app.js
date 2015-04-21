@@ -42,7 +42,7 @@ window.app = {
                 that.ui.submit.hide();
                 that.ui.submitted.show();
                 $.ajax({
-                    url: 'https://api.fourmeez.com/guests',
+                    url: 'http://178.62.139.175:8000/guests',
                     type: 'POST',
                     data: JSON.stringify({email: that.ui.email.val(), type: that.model.type}),
                     contentType: "application/json; charset=utf-8",
